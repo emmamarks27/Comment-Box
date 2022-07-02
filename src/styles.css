@@ -3,17 +3,20 @@ body {
   font-family: "Lato", sans-serif, arial;
 }
 
-#main {
+.section {
   background-color: white;
   display: block;
   margin: 30px auto;
   max-width: 600px;
   box-shadow: 2px 2px 5px black;
-  padding: 20px;
+  padding: 40px 60px;
   border-radius: 15px;
   color: 233142;
 }
 
+.exceed-character-limit {
+  border-color: red;
+}
 h2 {
   margin-bottom: 20px;
 }
@@ -24,6 +27,7 @@ input {
   line-height: 2;
   font-size: 18px;
   padding: 0;
+  outline: none;
 }
 
 #form-submit {
