@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="src/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Comment Box</title>
   </head>
   <body>
@@ -12,18 +19,21 @@
     <main id="main">
       <div class="container">
         <h1>Comment Box</h1>
-        <h2>Please leave feedback.</h2>
+        <h2>Please leave some feedback.</h2>
         <form id="form">
           <input type="text" placeholder="Name" />
+          <br />
           <input type="email" placeholder="Email" />
+          <br />
           <input
             type="textarea"
-            placeholder="Please leave any comments here"
+            placeholder="Please leave any comments here."
             id="comment-box"
           />
-          <input type="submit" value="submit" id="form-submit" />
+          <input type="submit" value="Add Comment" id="form-submit" />
         </form>
-        <p><span id="comment-box-length"></span>/140</p>
+        <hr />
+        <p>Character length: <span id="comment-box-length"></span>/140</p>
       </div>
     </main>
   </body>

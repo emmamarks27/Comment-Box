@@ -1,7 +1,6 @@
 function handleSubmit(event) {
   event.preventDefault();
-  console.log(commentBoxLength);
-  //alert("Submit is working");
+  checkLength();
 }
 
 function commentLength() {
@@ -21,7 +20,5 @@ function checkLength() {
 let submit = document.querySelector("#form");
 let commentBox = document.querySelector("#comment-box");
 let commentBoxLength = 0;
-console.log(submit);
 submit.addEventListener("submit", handleSubmit);
-submit.addEventListener("submit", checkLength);
 commentBox.addEventListener("keyup", commentLength);
