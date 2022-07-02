@@ -1,7 +1,6 @@
 function handleSubmit(event) {
   event.preventDefault();
   checkLength();
-  displayComment();
 }
 
 function commentLength() {
@@ -20,6 +19,7 @@ function checkLength() {
   if (commentBoxLength > 140) {
     alert("Sorry, your comments need to be within the 140 character range.");
   }
+  displayComment();
 }
 
 function displayComment() {
